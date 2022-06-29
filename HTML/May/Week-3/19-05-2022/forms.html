@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Input Element Attributes Document</title>
+    <style>
+      body {
+        margin-bottom: 800px;
+      }
+      div {
+        width: 300px;
+        margin: 50px auto;
+        background-color: lightgreen;
+        padding: 30px;
+        border: 2px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Placeholder Attribute</h2>
+      <form>
+        <label>User Name</label>
+        <input type="text" placeholder="Enter Your Name" id="username" />
+      </form>
+    </div>
+
+    <div>
+      <h2>disabled Attribute</h2>
+      <form>
+        <label>User Name</label>
+        <input
+          type="text"
+          disabled
+          placeholder="Enter Your Name"
+          id="username"
+        />
+      </form>
+    </div>
+
+    <div>
+      <h2>Value Attribute</h2>
+      <form>
+        <label>User Name</label>
+        <input
+          type="text"
+          value="Kabir"
+          placeholder="Enter Your Name"
+          id="username"
+        />
+      </form>
+    </div>
+
+    <div>
+      <h2>readonly Attribute</h2>
+      <form>
+        <label>User Name</label>
+        <input
+          type="text"
+          readonly
+          value="Technologies"
+          placeholder="Enter Your Name"
+          id="username"
+        />
+      </form>
+    </div>
+    <div>
+      <h2>required Attribute</h2>
+      <form>
+        <label>User Name</label>
+        <input
+          type="text"
+          required
+          placeholder="Enter Your Name"
+          id="username"
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>size Attribute</h2>
+      <form>
+        <label>User Name</label>
+        <input
+          type="text"
+          size="40"
+          placeholder="Enter Your Name"
+          id="username"
+        />
+      </form>
+    </div>
+
+    <div>
+      <h2>Minlength Attribute</h2>
+      <form>
+        <label>User Name</label>
+        <input
+          type="text"
+          minlength="6"
+          placeholder="Enter Your Name"
+          id="username"
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>pattern Attribute</h2>
+      <form>
+        <label>Phone No</label>
+        <input
+          type="text"
+          pattern="\+91[0-9]{10}"
+          placeholder="Enter Phone"
+          id="username"
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div>
+      <h2>maxLength Attribute</h2>
+      <form>
+        <label>OTP</label>
+        <input
+          type="text"
+          maxlength="4"
+          placeholder="OTP"
+          id="username"
+          size="4"
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

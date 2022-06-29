@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Document</title>
+    <style>
+      body {
+        margin-bottom: 800px;
+      }
+      div {
+        background-color: lightcoral;
+        padding: 30px;
+        width: 400px;
+        color: white;
+        margin: 50px auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Default Input Element</h2>
+      <form>
+        <label>User Name</label>
+        <input type="text" />
+      </form>
+    </div>
+    <div>
+      <h2>Input Element Without type Attribute</h2>
+      <form>
+        <label>User Name</label>
+        <input />
+      </form>
+    </div>
+
+    <div>
+      <h2>Password Textbox</h2>
+      <form>
+        <label>Password</label>
+        <input type="password" />
+      </form>
+    </div>
+
+    <div>
+      <h2>input type=button</h2>
+      <form>
+        <input type="button" value="Login" />
+        <input type="button" value="Registration" />
+        <input type="button" value="Submit" />
+      </form>
+    </div>
+
+    <div>
+      <h2>input type=radio</h2>
+      <form>
+        <input type="radio" name="gender" />
+        <label>Male</label>
+        <input type="radio" name="gender" />
+        <label>Female</label>
+        <input type="radio" name="gender" />
+        <label>Others</label>
+      </form>
+    </div>
+
+    <div>
+      <h2>input type=checkbox</h2>
+      <form>
+        <input type="checkbox" />
+        <label>HTML</label><br />
+        <input type="checkbox" />
+        <label>CSS</label><br />
+        <input type="checkbox" />
+        <label>JS</label><br />
+        <input type="checkbox" />
+        <label>React</label><br />
+        <input type="checkbox" />
+        <label>NodeJs</label><br />
+        <input type="checkbox" />
+        <label>MongoDB</label>
+      </form>
+    </div>
+
+    <div>
+      <h2>Input type=date</h2>
+      <form>
+        <label>Select Date</label>
+        <input type="date" />
+      </form>
+    </div>
+
+    <div>
+      <h2>Input type=time</h2>
+      <form>
+        <label>Select Time</label>
+        <input type="time" />
+      </form>
+    </div>
+
+    <div>
+      <h2>Input type=datetime-local</h2>
+      <form>
+        <label>Select Date & Time</label>
+        <input type="datetime-local" />
+      </form>
+    </div>
+
+    <div>
+      <h2>Input type=week</h2>
+      <form>
+        <label>Select Week</label>
+        <input type="week" />
+      </form>
+    </div>
+    <div>
+      <h2>Input type=Month</h2>
+      <form>
+        <label>Select Month</label>
+        <input type="month" />
+      </form>
+    </div>
+
+    <div>
+      <h2>Input type="file</h2>
+      <form>
+        <input type="file" />
+      </form>
+    </div>
+    <div>
+      <h2>Input type=number</h2>
+      <form>
+        <input type="number" />
+      </form>
+    </div>
+
+    <div>
+      <h2>Input type=list</h2>
+      <form>
+        <input type="list" list="mylist" />
+
+        <datalist id="mylist">
+          <option>React</option>
+          <option>HTML</option>
+          <option>HTML React</option>
+          <option>CSS HTML</option>
+          <option>CSS</option>
+        </datalist>
+      </form>
+    </div>
+
+    <div>
+      <h2>DropDown</h2>
+      <form>
+        <select>
+          <option>Select Technologies</option>
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>React</option>
+          <option>Javascript</option>
+        </select>
+      </form>
+    </div>
+    <div>
+      <h2>DropDown with OptGroup</h2>
+      <form>
+        <select>
+          <optgroup label="Frontend Technology">
+            <option>Select Technology</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+            <option>React</option>
+          </optgroup>
+          <optgroup label="Backend Technology">
+            <option>NodeJS</option>
+            <option>Springboot</option>
+            <option>Asp.net</option>
+            <option>Django</option>
+          </optgroup>
+          <optgroup label="Database">
+            <option>Oracle</option>
+            <option>Sql server</option>
+            <option>MongoDB</option>
+            <option>Mysql</option>
+          </optgroup>
+        </select>
+      </form>
+    </div>
+
+    <div>
+      <h2>Textarea</h2>
+      <form>
+        <label>Enter Address</label>
+        <textarea rows="7" cols="40" maxlength="100"> </textarea>
+      </form>
+    </div>
+
+    <div>
+      <h2>button</h2>
+      <form>
+        <button>Login</button>
+        <button>Registration</button>
+      </form>
+    </div>
+  </body>
+</html>
