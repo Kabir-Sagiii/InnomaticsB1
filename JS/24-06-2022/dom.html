@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        width: 300px;
+        padding: 50px;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        margin: 100px auto;
+      }
+    </style>
+    <script>
+      function fnChangeDoc() {
+        console.log(document);
+        //Get the Reference (Memory location)
+        var h2Reference = document.getElementById("h2Ref");
+        var divReference = document.getElementById("d1");
+        var btnReference = document.getElementById("b1");
+        var bodyReference = document.getElementById("body1");
+
+        h2Reference.innerText = "Hello, Javascript";
+        h2Reference.style.color = "white";
+        divReference.style.backgroundColor = "lightcoral";
+        btnReference.style.color = "white";
+        btnReference.style.backgroundColor = "red";
+        btnReference.style.border = "none";
+        btnReference.style.padding = "10px";
+        bodyReference.style.backgroundColor = "lightgreen";
+      }
+    </script>
+  </head>
+  <body id="body1">
+    <div id="d1">
+      <h2 id="h2Ref">Welcome to HTML</h2>
+      <button id="b1" onclick="fnChangeDoc()">Change Content</button>
+    </div>
+  </body>
+</html>

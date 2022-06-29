@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        width: 500px;
+        border: 2px solid black;
+        padding: 50px;
+        margin: 100px auto;
+        text-align: center;
+      }
+    </style>
+    <script>
+      var olRef = document.createElement("ol"); // <ol>   </ol>
+      function displayList() {
+        var h2Ref = document.getElementById("h2");
+        h2Ref.remove();
+
+        var inputRef = document.querySelector("input");
+        var inputValue = inputRef.value;
+
+        var liRef = document.createElement("li"); //  <li>  </li>
+
+        liRef.innerText = inputValue; // <li>----- </li>
+
+        olRef.appendChild(liRef); // <ol> <li>----</li> </ol>
+
+        document.querySelector("div").appendChild(olRef);
+
+        inputRef.value = "";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="text" placeholder="Enter Some Text" />
+      <button onclick="displayList()">Submit</button>
+      <h2 id="h2">Hello i am h2</h2>
+    </div>
+  </body>
+</html>

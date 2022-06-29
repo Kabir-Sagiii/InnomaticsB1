@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        width: 300px;
+        border: 2px solid black;
+        padding: 50px;
+        margin: 100px auto;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function getInputData() {
+        var inputRef = document.getElementById("input");
+        var h2Ref = document.getElementById("h2");
+
+        var inputValue = inputRef.value;
+        h2Ref.innerText = inputValue;
+
+        inputRef.value = "";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input id="input" type="text" placeholder="Enter some Text" />
+
+      <button onclick="getInputData()">Submit</button>
+      <h2 id="h2" style="color: red">No Data</h2>
+    </div>
+  </body>
+</html>

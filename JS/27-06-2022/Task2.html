@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        width: 300px;
+        border: 2px solid black;
+        padding: 50px;
+        margin: 100px auto;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function showhidePassword() {
+        var inputRef = document.getElementById("input");
+        var btnRef = document.querySelector("button");
+
+        if (inputRef.type === "password") {
+          inputRef.type = "text";
+          btnRef.innerText = "Hide Password";
+        } else {
+          inputRef.type = "password";
+          btnRef.innerText = "Show Password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="d">
+      <h2 id="h2">Show/Hide Password</h2>
+      <input id="input" type="password" placeholder="Enter some Text" />
+
+      <button onclick="showhidePassword()">Show Password</button>
+    </div>
+  </body>
+</html>
