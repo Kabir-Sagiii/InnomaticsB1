@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #container {
+        display: flex;
+        flex-direction: row;
+
+        height: 400px;
+      }
+      #box1,
+      #box2 {
+        background-color: lightcoral;
+        color: white;
+        padding: 10px;
+        width: 100px;
+
+        margin: 10px;
+      }
+
+      #box1 {
+        flex: 1;
+      }
+      #box2 {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+      }
+      #box21,
+      #box22 {
+        background-color: lightgreen;
+        color: white;
+        padding: 10px;
+
+        margin: 10px;
+      }
+
+      #box21 {
+        flex: 1;
+      }
+      #box22 {
+        flex: 3;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="box1">Box 1</div>
+      <div id="box2">
+        <div id="box21">Box 2 1</div>
+        <div id="box22">Box 2 2</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    /* border: 2px solid black; */
+    padding: 30px;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+#b1,#b2,#b3{
+    width: 100px;
+   background-color: lightcoral;
+   padding: 10px;
+   color: white;
+   text-align: center;
+   margin: 5px;
+   height: 400px;
+}
+#b1 {
+    flex:2
+}
+#b2 {
+    flex:4;
+    display: flex;
+    flex-direction: column;
+
+}
+#b3 {
+  flex:4
+}
+#b21,#b22 {
+    
+        background-color: lightgreen;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        margin: 5px;
+        
+}
+#b21 {
+    flex:4
+}
+#b22 {
+    flex:2
+}

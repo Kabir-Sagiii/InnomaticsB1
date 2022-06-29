@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        border: 2px solid black;
+        padding: 50px;
+        text-align: center;
+        margin: 100px auto;
+        width: 300px;
+      }
+      /* input[type="text"] {
+        background-color: blueviolet;
+      }
+      input[type="password"] {
+        background-color: red;
+        color: white;
+      } */
+      input[placeholder="username"] {
+        background-color: teal;
+      }
+      input[placeholder="password"] {
+        background-color: darkorange;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <dl>
+          <dt>User Name</dt>
+          <dd><input type="text" placeholder="username" /></dd>
+          <dt>Password</dt>
+          <dd><input type="password" placeholder="password" /></dd>
+        </dl>
+        <button>Login</button>
+        <button>Registration</button>
+      </form>
+    </div>
+  </body>
+</html>

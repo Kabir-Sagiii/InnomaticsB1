@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .container {
+        width: 800px;
+        height: 500px;
+        box-shadow: 0 0 10px black;
+      }
+      .box {
+        color: white;
+        width: 150px;
+        height: 150px;
+        background: red;
+      }
+      #box1 {
+        /* position: relative; */
+        z-index: 2;
+
+        background: green;
+      }
+      #box2 {
+        /* position: relative; */
+        bottom: 100px;
+        z-index: 4;
+        background: blueviolet;
+      }
+      #box3 {
+        /* position: relative; */
+        bottom: 150px;
+        z-index: 1;
+        background: rgb(25, 9, 40);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Box 1</div>
+      <div class="box" id="box2">Box 2</div>
+      <div class="box" id="box3">Box 3</div>
+    </div>
+  </body>
+</html>

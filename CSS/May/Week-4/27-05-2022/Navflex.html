@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #container {
+        display: flex;
+        background-color: black;
+        justify-content: center;
+      }
+
+      #title {
+        /* background-color: blue; */
+        flex: 2;
+        display: flex;
+        justify-content: center;
+      }
+      #menu {
+        /* background-color: blueviolet; */
+        flex: 3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        margin-right: 50px;
+      }
+      h2 {
+        color: white;
+      }
+      h1 {
+        color: white;
+        font-size: 50px;
+        margin: 0;
+        font-style: italic;
+      }
+      #mainSection {
+        background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      button {
+        background-color: orangered;
+        color: white;
+        padding: 10px 25px;
+        margin: 10px;
+        border: none;
+        border-radius: 50px;
+      }
+      p {
+        color: white;
+        margin: 10px 50px;
+        font-size: 20px;
+        font-style: italic;
+      }
+      #subSection {
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="title">
+        <h2>MyPortfolio</h2>
+      </div>
+      <div id="menu">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Products</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+
+    <div id="mainSection">
+      <div id="subSection">
+        <h1>Welcome to Css Flex</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit
+          perspiciatis odio nulla dolorem praesentium labore iure cum? Eaque
+          vitae similique minima fugit saepe commodi et laboriosam, pariatur,
+          nisi ipsam magni. Unde omnis ex doloribus eos deserunt id, in numquam.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, eum
+          quos! Harum modi deleniti fuga error rerum quos adipisci molestias
+          enim esse fugiat at expedita quia recusandae id ab, cum facilis nemo
+          temporibus sint sequi. Possimus rerum expedita ab harum id nobis
+          soluta, nam dicta esse labore veniam? Officiis cumque labore eum
+          reprehenderit aut voluptate vel repudiandae architecto incidunt
+          officia.
+        </p>
+        <button>Explore More !!!</button>
+      </div>
+    </div>
+  </body>
+</html>
