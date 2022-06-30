@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function fn() {
+        var h2Ref = document.querySelector("h2");
+        var details = {
+          name: "Rahul",
+          city: "Hyderabad",
+          email: "R@gmail.com",
+          id: 101,
+        };
+
+        // for (var propertKey in details) {
+        //   //   console.log(propertKey + ":" + details[propertKey]);
+        //   document.write(propertKey);
+        //   document.write("<br>");
+        // }
+        for (var propertKey in h2Ref) {
+          document.write(propertKey);
+          document.write("<br>");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Welcome to "in" Operator</h2>
+    <button onclick="fn()">Click</button>
+  </body>
+</html>
