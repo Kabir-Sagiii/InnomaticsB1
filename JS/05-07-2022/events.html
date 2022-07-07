@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        text-align: center;
+        padding: 50px;
+        border: 2px solid black;
+        width: 300px;
+        margin: 100px auto;
+      }
+    </style>
+    <script>
+      function fn() {
+        document.getElementById("d1").style.backgroundColor = "lightgreen";
+      }
+
+      function f1() {
+        document.getElementById("d1").style.backgroundColor = "lightgreen";
+        document.querySelector("button").style.backgroundColor = "red";
+      }
+
+      function f2() {
+        document.getElementById("d1").style.backgroundColor = "lightcoral";
+        document.querySelector("button").style.backgroundColor = "coral";
+      }
+
+      function changebodyColor() {
+        // setTimeout(function () {
+        //   document.querySelector("body").style.backgroundColor = "lightcoral";
+        //   document.getElementById("d1").style.backgroundColor = "lightgreen";
+        // }, 3000);
+        setInterval(function () {
+          var bodyRef = document.querySelector("body");
+          if (bodyRef.style.backgroundColor === "lightcoral") {
+            bodyRef.style.backgroundColor = "lightgreen";
+          } else {
+            bodyRef.style.backgroundColor = "lightcoral";
+          }
+        }, 1000);
+      }
+    </script>
+  </head>
+  <body onload="changebodyColor()">
+    <div id="d1" onmouseleave="f2()" onmouseenter="f1()">
+      <button onmouseleave="f2()" onmouseenter="f1()" onclick="fn()">
+        Explore Events Concept
+      </button>
+    </div>
+  </body>
+</html>
