@@ -1,0 +1,9 @@
+#state2 {
+    width: 300px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        padding: 30px;
+        margin: 100px auto;
+        background-color: lightcoral;
+        color: white;
+}
