@@ -1,0 +1,17 @@
+<html lang="en">
+  <head>
+    <script>
+      function changeText() {
+        // Reference of h2
+        var h2Ref = document.getElementById("h2Id");
+        //using Reference changing the innerText of H2
+        h2Ref.innerText = "Hello JS";
+        h2Ref.style.color = "green";
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="h2Id">Welcome to HTML</h2>
+    <button onclick="changeText()">Javascript</button>
+  </body>
+</html>
