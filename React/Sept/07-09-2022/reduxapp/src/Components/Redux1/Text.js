@@ -1,6 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function Text(props) {
+  const data = useSelector((storeData) => {
+    return storeData;
+  });
   return (
     <div className="card">
       <div className="card-header bg-success text-white">
@@ -8,7 +12,9 @@ function Text(props) {
       </div>
 
       <div className="card-body">
-        <h2>Content:</h2>
+        <h2>
+          Content:<span className="text-danger">{data.textReducer}</span>
+        </h2>
       </div>
     </div>
   );

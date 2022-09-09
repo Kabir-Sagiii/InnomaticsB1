@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import textAction from "../../Actions/textAction";
 
 function Input(props) {
+  const [state, setState] = useState("");
+
+  const callReducer = () => {
+    textAction(state);
+  };
   return (
     <div className="card">
       <div className="card-header bg-primary text-white">
@@ -14,10 +20,15 @@ function Input(props) {
               type="text"
               placeholder="Enter Text"
               className="form-control"
+              onChange={(event) => {
+                setState(event.target.value);
+              }}
             />
           </div>
           <div className="col-4">
-            <button className="btn btn-primary px-5">Submit</button>
+            <button className="btn btn-primary px-5" onClick={callReducer}>
+              Submit
+            </button>
           </div>
         </div>
       </div>
