@@ -18,8 +18,11 @@ function App() {
             <Product />
           </div>
         </div>
-        <div className="row">
-          <div className="col"></div>
+        <div className="row ">
+          <div className="col">
+            <h2 className="my-5 text-success">Product Details</h2>
+            <ProductDetails />
+          </div>
         </div>
       </div>
     </div>
