@@ -1,0 +1,22 @@
+.flexContainer {
+    height: 70px;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: black;
+}
+.title{
+ width: 40%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+width: 60%;
+}
+.title h2{
+    color: white;
+}

@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.bg-white {
+  background-color: whitesmoke;
+}
+
+.boxShadoww {
+  box-shadow: 0 0 10px black;
+}
+.bImg{
+  background-image: url("https://www.callcentrehelper.com/images/stories/2021/03/shopping-trolley-760.jpg");
+  height: 100vh;
+
+}
+
+.dflex {
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+height: 100vh;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
