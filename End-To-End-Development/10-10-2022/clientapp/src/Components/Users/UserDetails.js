@@ -9,6 +9,15 @@ function UserDetails(props) {
     getData();
   }, []);
 
+  const deleteUser = async (id) => {
+    var res = await axios.delete(`http://localhost:9797/delete/${id}`);
+    console.log(res);
+    if (res.statusText === "OK") {
+      alert("Deleted Successfully");
+      getData();
+    }
+  };
+
   const getData = async () => {
     var res = await axios.get("http://localhost:9797/accessdata");
     console.log(res);
@@ -64,10 +73,20 @@ function UserDetails(props) {
                         </Link>
                       </td>
                       <td>
-                        <button className="btn btn-secondary">Edit</button>
+                        <Link to={`/update/${element._id}`}>
+                          {" "}
+                          <button className="btn btn-primary">Edit</button>
+                        </Link>
                       </td>
                       <td>
-                        <button className="btn btn-danger">Delete</button>
+                        <button
+                          className="btn btn-danger"
+                          onClick={() => {
+                            deleteUser(element._id);
+                          }}
+                        >
+                          Delete
+                        </button>
                       </td>
                     </tr>
                   );

@@ -33,8 +33,9 @@ app.get("/accessdata", (req, res) => {
   });
 }); // http://localhost:9797/accessdata
 
-app.get("/specifiUser/:id", (req, res) => {
+app.get("/specificUser/:id", (req, res) => {
   var id = req.params.id;
+  console.log(id);
   mongoClient.connect(dbUrl, (error, cluster) => {
     if (error) {
       res.send("Error while connecting with DB");
@@ -98,9 +99,10 @@ app.put("/update", upload.none(), (req, res) => {
   //http://localhost:9797/update?id=8888888888
   var id = req.query.id;
 
-  var name = req.body.uname;
-  var city = req.body.ucity;
+  var name = req.body.name;
+  var city = req.body.city;
   var phone = req.body.phone;
+  var email = req.body.email;
   console.log(id);
   console.log(name, city, phone);
 
@@ -109,6 +111,7 @@ app.put("/update", upload.none(), (req, res) => {
       name: name,
       phone: phone,
       city: city,
+      email: email,
     },
   };
 
@@ -135,6 +138,26 @@ app.put("/update", upload.none(), (req, res) => {
 });
 
 // delete end point
+
+app.delete("/delete/:id", (req, res) => {
+  console.log("hi");
+  var id = req.params.id;
+  mongoClient.connect(dbUrl, (error, cluster) => {
+    if (error) {
+      res.send("error while connectiong");
+    } else {
+      const dbRef = cluster.db("innomaticsDB");
+      const collectionRef = dbRef.collection("innomaticCollection");
+      collectionRef.deleteOne({ _id: ObjectId(id) }, (error, msg) => {
+        if (error) {
+          res.send(error);
+        } else {
+          res.send("Deleted Successfully");
+        }
+      });
+    }
+  });
+}); //http://localhost:9797/delete/101
 
 app.listen(port, () => {
   console.log("Server Started");

@@ -7,6 +7,7 @@ import Home from "./Components/Home/Home";
 import NewUser from "./Components/Users/NewUser";
 import UserDetails from "./Components/Users/UserDetails";
 import UserSpecificDetails from "./Components/Users/UserSpecificDetails";
+import EditUser from "./Components/Users/EditUser";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/newuser" element={<NewUser />} />
           <Route path="/users" element={<UserDetails />} />
           <Route path="/details/:id" element={<UserSpecificDetails />} />
+          <Route path="/update/:id" element={<EditUser />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
